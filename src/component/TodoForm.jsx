@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 
-const TodoForm = ({ addTodo }) => {
+const TodoForm = ({ addTodo, showAdd }) => {
 
 const [value, setValue] = useState("");
 
@@ -19,6 +19,8 @@ const handleFormSubmit = e => {
     setValue("");
 };
 
+if(showAdd){
+
     return (
             <section className="add">
                 <form className="add-form" onSubmit={handleFormSubmit}>
@@ -27,10 +29,15 @@ const handleFormSubmit = e => {
                 </form>
             </section>
     )
+} else {
+    return null;
+}
+
 }
 
 TodoForm.propTypes = {
-    addTodo: PropTypes.func.isRequired
+    addTodo: PropTypes.func.isRequired,
+    showAdd: PropTypes.bool.isRequired
 }
 
 export default TodoForm;
