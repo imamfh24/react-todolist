@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Paper from "./component/Paper";
 
 function App() {
   return (
-    <div className="container">
-                    <div className="frame">
+    <Paper>
                         <section className="header">
                             <button className="header-btn main-black-color">Add</button>
                             <h1 className="header-title">Todo Lists</h1>
@@ -29,8 +29,7 @@ function App() {
                         </section>
                         <section className="todos">
                         </section>
-                    </div>
-                </div>
+                        </Paper>
   );
 }
 
