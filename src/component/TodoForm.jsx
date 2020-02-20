@@ -14,8 +14,13 @@ const handleFormSubmit = e => {
         return;  
     } 
 
-    addTodo(value)
+    if(value.length > 30){
+        alert('Please create a shorter Todo text!')
+        setValue("");
+        return;
+    }
 
+    addTodo(value)
     setValue("");
 };
 
