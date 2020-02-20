@@ -14,10 +14,16 @@ const [todos, setTodos] = useState([
     { text: "Learning React!" },
 ])
 
+const addTodo = value => {
+    const addedTodo = [...todos, { text: value}]
+
+    setTodos(addedTodo)
+}
+
   return (
     <Paper>
       <Header/>
-      <TodoForm/>
+      <TodoForm addTodo={addTodo}/>
       <Todos todos={todos}/>
     </Paper>
   );
