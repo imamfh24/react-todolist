@@ -88,7 +88,7 @@ html {
 }
 
 .add {
-    padding: 16px;
+    padding: 9px 16px 10px 16px;
 }
 
 .add-form {
@@ -132,7 +132,6 @@ html {
 .todos{
     display: flex;
     flex-direction: column;
-
     min-height: 500px;
 }
 
@@ -158,4 +157,17 @@ html {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+}
+
+.todo-placeholder-text{
+  font-family: 'Homemade Apple', cursive;
+  font-size: 24px;
+  text-align: center;
+  padding: 16px;
+}
+
+.add-buton-placeholder-text {
+  font-family: "Bungee", sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
 }
