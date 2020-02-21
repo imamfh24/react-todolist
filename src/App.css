@@ -106,7 +106,7 @@ html {
   border-bottom: 1px solid var(--main-red-color);
   outline: unset;
 
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Bungee", sans-serif;
   font-size: 16px;
   text-transform: lowercase;
   text-align: center;
@@ -141,10 +141,10 @@ html {
     flex: 1 0 auto;
     text-align: center;
 
-    max-height: 34px;
-    margin: 16px 0 0;
+    max-height: 50px;
+    margin: 8px 0 0;
 
-    font-family: 'Homemade Apple', cursive;
+    font-family: "Bungee", sans-serif;
     font-size: 24px;
 
     border-bottom: 1px solid var(--main-red-color);
